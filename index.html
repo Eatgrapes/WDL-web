@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>WinDynamicIsland - 为Windows带来灵动岛体验</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="icon" href="/WDL-web/icon.png" type="image/png">
     <style>
         @keyframes float {
             0% { transform: translateY(0px); }
@@ -32,21 +32,24 @@
     </style>
 </head>
 <body class="bg-gradient-to-br from-gray-50 to-white min-h-screen flex flex-col">
-    <header class="py-8 md:py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto text-center">
-            <!-- 灵动岛图标 - 移除了圆形背景 -->
-            <div class="flex justify-center mb-6 md:mb-8">
-                <img src="icon.png" alt="WinDynamicIsland Logo" class="w-24 h-24 md:w-32 md:h-32 floating">
+    <header class="pt-12 pb-8 md:pt-16 md:pb-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center flex flex-col items-center">
+            <!-- 放大图标并调整位置 -->
+            <div class="flex justify-center mb-4 md:mb-6">
+                <img src="icon.png" alt="WinDynamicIsland Logo" class="w-32 h-32 md:w-40 md:h-40 floating">
             </div>
             
-            <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-3 md:mb-4 gradient-text">WinDynamicIsland</h1>
-            <p class="text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto px-4">为Windows系统带来丝滑流畅的灵动岛体验</p>
-            
-            <!-- 下载按钮 -->
-            <div class="mb-8 md:mb-12 px-4">
-                <a href="https://www.bing.com" target="_blank" class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 md:px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm md:text-base">
-                    下载 WinDynamicIsland
-                </a>
+            <!-- 调整文字位置 -->
+            <div class="mt-auto">
+                <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-2 md:mb-3 gradient-text">WinDynamicIsland</h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto px-4">为Windows系统带来丝滑流畅的灵动岛体验</p>
+                
+                <!-- 下载按钮 -->
+                <div class="mb-8 md:mb-12 px-4">
+                    <a href="https://www.bing.com" target="_blank" class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 md:px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm md:text-base">
+                        下载 WinDynamicIsland
+                    </a>
+                </div>
             </div>
         </div>
     </header>
