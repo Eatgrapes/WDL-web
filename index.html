@@ -5,16 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>WinDynamicIsland - 为Windows带来灵动岛体验</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="/WDL-web/icon.png" type="image/png">
+    <link rel="icon" href="icon.png" type="image/png">
     <style>
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-        .floating {
-            animation: float 3s ease-in-out infinite;
-        }
         .gradient-text {
             background: linear-gradient(90deg, #3b82f6, #8b5cf6);
             -webkit-background-clip: text;
@@ -32,11 +24,11 @@
     </style>
 </head>
 <body class="bg-gradient-to-br from-gray-50 to-white min-h-screen flex flex-col">
-    <header class="pt-12 pb-8 md:pt-16 md:pb-12 px-4 sm:px-6 lg:px-8">
+    <header class="pt-8 pb-6 md:pt-12 md:pb-8 px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center flex flex-col items-center">
-            <!-- 放大图标并调整位置 -->
-            <div class="flex justify-center mb-4 md:mb-6">
-                <img src="icon.png" alt="WinDynamicIsland Logo" class="w-32 h-32 md:w-40 md:h-40 floating">
+            <!-- 大幅增加图标尺寸并移除浮动效果 -->
+            <div class="flex justify-center mb-2 md:mb-4">
+                <img src="icon.png" alt="WinDynamicIsland Logo" class="w-48 h-48 md:w-64 md:h-64">
             </div>
             
             <!-- 调整文字位置 -->
