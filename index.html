@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinDynamicIsland - Windows平台的灵动岛实现</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="WDL-web/styles.css">
+</head>
+<body>
+    <!-- 顶部应用栏 -->
+    <header class="top-app-bar">
+        <span class="material-icons">desktop_windows</span>
+        <h1 class="top-app-bar__title">WinDynamicIsland</h1>
+        <div class="top-app-bar__actions">
+            <a href="#features" class="button button--outlined">特性</a>
+            <a href="#download" class="button button--filled">下载</a>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero__title">WinDynamicIsland</h1>
+            <p class="hero__subtitle">将IPhone的灵动岛体验带到Windows平台。使用Qt和C++开发。</p>
+        </div>
+    </section>
+
+    <!-- 特性部分 -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">核心特性</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <span class="material-icons feature-icon">animation</span>
+                    <h3 class="feature-title">丝滑动画</h3>
+                    <p class="feature-text">采用Qt框架实现的高性能动画引擎，确保每一帧都流畅自然。</p>
+                </div>
+                <div class="feature-item">
+                    <span class="material-icons feature-icon">height</span>
+                    <h3 class="feature-title">自定义位置</h3>
+                    <p class="feature-text">支持调整灵动岛的位置，适应不同用户的屏幕和偏好。</p>
+                </div>
+                <div class="feature-item">
+                    <span class="material-icons feature-icon">keyboard</span>
+                    <h3 class="feature-title">自定义键位</h3>
+                    <p class="feature-text">允许用户配置快捷键，快速调用灵动岛功能。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 下载部分 -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2 class="download__title">下载 WinDynamicIsland</h2>
+            <p class="download__text">项目仍在开发中，即将发布。</p>
+            <button id="download-btn" class="button button--filled">
+                <span class="material-icons">download</span>
+                前往下载
+            </button>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">© 2025 WinDynamicIsland 项目 | 使用Qt和C++开发的Windows灵动岛实现</p>
+        </div>
+    </footer>
+
+    <script src="WDL-web/script.js"></script>
+</body>
+</html>
