@@ -3,73 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WinDynamicIsland - Windows平台的灵动岛实现</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/WDL-web/styles.css">
+    <title>WinDynamicIsland - 为Windows带来灵动岛体验</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="icon.png" type="image/png">
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
 </head>
-<body>
-    <!-- 顶部应用栏 -->
-    <header class="top-app-bar">
-        <span class="material-icons">desktop_windows</span>
-        <h1 class="top-app-bar__title">WinDynamicIsland</h1>
-        <div class="top-app-bar__actions">
-            <a href="#features" class="button button--outlined">特性</a>
-            <a href="#download" class="button button--filled">下载</a>
+<body class="bg-white min-h-screen flex flex-col">
+    <header class="py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <!-- 灵动岛图标 -->
+            <div class="flex justify-center mb-6">
+                <img src="icon.png" alt="WinDynamicIsland Logo" class="w-32 h-32 floating">
+            </div>
+            
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">WinDynamicIsland</h1>
+            <p class="text-xl text-gray-600 mb-8">为Windows系统带来丝滑流畅的灵动岛体验</p>
+            
+            <!-- 下载按钮 -->
+            <div class="mb-12">
+                <a href="https://www.bing.com" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                    下载 WinDynamicIsland
+                </a>
+            </div>
         </div>
     </header>
 
-    <!-- 英雄区域 -->
-    <section class="hero">
-        <div class="container">
-            <h1 class="hero__title">WinDynamicIsland</h1>
-            <p class="hero__subtitle">将IPhone的灵动岛体验带到Windows平台。使用Qt和C++开发。</p>
-        </div>
-    </section>
-
-    <!-- 特性部分 -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">核心特性</h2>
-            <div class="feature-grid">
-                <div class="feature-item">
-                    <span class="material-icons feature-icon">animation</span>
-                    <h3 class="feature-title">丝滑动画</h3>
-                    <p class="feature-text">采用Qt框架实现的高性能动画引擎，确保每一帧都流畅自然。</p>
+    <main class="flex-grow px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <section class="mb-16">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">应用特性</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Qt与C++开发</h3>
+                        <p class="text-gray-600">使用Qt框架和C++语言开发，确保高效性能和跨平台兼容性。</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">丝滑动画效果</h3>
+                        <p class="text-gray-600">精心设计的动画过渡，提供与IPhone相似的流畅灵动岛体验。</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">高度可定制</h3>
+                        <p class="text-gray-600">可调整大小、位置和透明度，满足您的个性化需求。</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">自定义快捷键</h3>
+                        <p class="text-gray-600">支持自定义快捷键设置。</p>
+                    </div>
                 </div>
-                <div class="feature-item">
-                    <span class="material-icons feature-icon">height</span>
-                    <h3 class="feature-title">自定义位置</h3>
-                    <p class="feature-text">支持调整灵动岛的位置，适应不同用户的屏幕和偏好。</p>
-                </div>
-                <div class="feature-item">
-                    <span class="material-icons feature-icon">keyboard</span>
-                    <h3 class="feature-title">自定义键位</h3>
-                    <p class="feature-text">允许用户配置快捷键，快速调用灵动岛功能。</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- 下载部分 -->
-    <section id="download" class="download">
-        <div class="container">
-            <h2 class="download__title">下载 WinDynamicIsland</h2>
-            <p class="download__text">项目仍在开发中，即将发布。</p>
-            <button id="download-btn" class="button button--filled">
-                <span class="material-icons">download</span>
-                前往下载
-            </button>
+            <section class="mb-16">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">开发状态</h2>
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-4">
+                    <p class="text-blue-700">WinDynamicIsland目前正在积极开发中，尚未完成全部功能。我们致力于为用户提供最佳的Windows灵动岛体验。</p>
+                </div>
+            </section>
         </div>
-    </section>
+    </main>
 
-    <!-- 页脚 -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer__text">© 2025 WinDynamicIsland 项目 | 使用Qt和C++开发的Windows灵动岛实现</p>
+    <footer class="bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center text-gray-500">
+            <p>© 2025 WinDynamicIsland 项目. 保留所有权利.</p>
         </div>
     </footer>
-
-    <script src="/WDL-web/script.js"></script>
 </body>
 </html>
