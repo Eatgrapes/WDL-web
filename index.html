@@ -52,9 +52,19 @@
             background: linear-gradient(90deg, #3b82f6, #ec4899);
             border-radius: 2px;
         }
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .main-content {
+            flex: 1 0 auto;
+        }
+        footer {
+            flex-shrink: 0;
+        }
     </style>
 </head>
-<body class="bg-gradient-to-br from-gray-100 to-blue-50 min-h-screen flex flex-col">
+<body class="bg-gradient-to-br from-gray-100 to-blue-50 flex flex-col min-h-screen">
     <header class="pt-6 pb-4 md:pt-10 md:pb-6 px-4 sm:px-6 lg:px-8">
         <div class="max-w-5xl mx-auto text-center flex flex-col items-center">
             <!-- 长条形图标 -->
@@ -70,14 +80,14 @@
                 <!-- 下载按钮 -->
                 <div class="mb-10 md:mb-14 px-4">
                     <a href="https://i-070.wwentua.com:446/04201600233577250bb/2025/04/20/c95292182d18b712aaff0e4a19931054.zip?st=SbCBWLim0IKhga4YdUNrtQ&e=1745138793&b=AwYLYlQ6WBkFKQc_aBDVQOVNvCzQNRQB1BTpYNFw1B2FV4VrvB4xXugf9AMMFZVB6UjdaKAIwVLUF313YAClSKgM4C3s_c&fi=233577250&pid=111-14-144-244&up=2&mp=1&co=0" target="_blank" class="download-btn inline-block text-white font-semibold py-3 px-8 md:px-10 rounded-full shadow-lg text-base md:text-lg">
-                        下载测试版 (不稳定，未完成)
+                        下载
                     </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="flex-grow px-4 sm:px-6 lg:px-8 pb-12 md:pb-16">
+    <main class="main-content flex-grow px-4 sm:px-6 lg:px-8 pb-12 md:pb-16">
         <div class="max-w-5xl mx-auto">
             <section class="mb-16 md:mb-24">
                 <h2 class="section-title text-3xl md:text-4xl font-bold text-gray-900 mb-8 md:mb-10 text-center">应用特性</h2>
@@ -121,9 +131,7 @@
         </div>
     </main>
 
-    <footer class="bg-white py-8 md:py-10 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
-        <div class="max-w-5xl mx-auto text-center text-gray-500 text-base md:text-lg">
-        </div>
+    <footer class="bg-white border-t border-gray-200">
     </footer>
 </body>
-                    </html>
+                                </html>
